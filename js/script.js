@@ -1,39 +1,25 @@
-"use strict";
+/* Задание на урок:
 
-let number = 5.5;
+1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+'Сколько фильмов вы уже посмотрели?'
 
-console.log(number);
+2) Создать объект personalMovieDB и в него поместить такие свойства:
+    - count - сюда передается ответ на первый вопрос
+    - movies - в это свойство поместить пустой объект
+    - actors - тоже поместить пустой объект
+    - genres - сюда поместить пустой массив
+    - privat - в это свойство поместить boolean(логическое) значение false
 
-const persone = 'Alex';
+3) Задайте пользователю по два раза вопросы:
+    - 'Один из последних просмотренных фильмов?'
+    - 'На сколько оцените его?'
+Ответы стоит поместить в отдельные переменные
+Записать ответы в объект movies в формате: 
+    movies: {
+        'logan': '8.1'
+    }
 
-const obj = {
-    name: "John",
-    age: 25,
-    isMarried: false
-};
+Проверить, чтобы все работало без ошибок в консоли */
 
-console.log(obj.age);
+'use strict';
 
-//const result = confirm("Are you here?");
-
-//const answer = prompt("Did your age over 18?", "");
-//console.log(answer);
-
-const answers = [];
-
-answers[0] = prompt('Whats your name?', '');
-answers[1] = prompt('Whats your lastname?', '');
-answers[2] = prompt('How old are you?', '');
-
-document.write(answers);
-
-const category = 'toys';
-
-let incr = 10,
-    decr = 10;
-
-incr++;
-decr--;
-
-console.log(incr);
-console.log(decr);
